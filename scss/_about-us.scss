@@ -1,0 +1,12 @@
+.about-us {
+    background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/home/mobile/image-small-team.jpg);
+    margin-bottom: 72px;
+    padding: 170px 32px;
+
+    & h2 {
+        margin-bottom: 32px;
+        font-size: 40px;
+        line-height: 46px;     
+        color: white;
+    }
+}

@@ -1,0 +1,72 @@
+// GLOBAL STYLES 
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: $font;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: $darkGrey;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $font;
+    font-weight: 700;
+    color: $veryDarkBlue;
+}
+
+h1 {
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: -2px;
+}
+
+h2 {
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2px;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+h1.large {
+    font-size: 200px;
+    line-height: 200px;
+    letter-spacing: -5px;
+    color: $veryLightGrey;
+}
+
+.container {
+    padding: 32px;
+}
+
+.flex {
+    display: flex;
+
+    &-j-sb {
+        justify-content: space-between;
+    }
+
+    &-ai-c {
+        align-items: center;
+    }
+}
+
+
+

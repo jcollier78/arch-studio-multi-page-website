@@ -1,0 +1,39 @@
+// HEADER
+
+.page-label {
+    display: none;
+}
+
+.logo img {
+    display: block;
+    width: 77px;
+    height: auto;
+}
+
+.main-menu {
+    display: none;
+}
+
+.mobile-menu-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    width: 90%;
+    background-color: $veryLightGrey;
+    right: 0;
+    padding: 45px;
+
+    & ul {
+        list-style: none;
+    }
+
+    & a {
+        display: block;
+        color: $veryDarkBlue;
+        text-decoration: none;
+    }
+}

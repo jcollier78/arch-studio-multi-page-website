@@ -1,0 +1,57 @@
+// SLIDER
+
+.slide-container {
+    position: relative;
+
+    & p {
+        padding-bottom: 55px; 
+        color: white;
+    }
+    
+
+    & h1 {
+        padding-bottom: 15px;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -4;
+        color: white;
+    }
+}
+
+.slide {
+    display: none;
+}
+
+
+.slide-1 {
+    display: block;
+    background: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../assets/home/mobile/image-hero-paramour.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 110px 32px;
+}
+
+.slide-2 {
+    background: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../assets/home/mobile/image-hero-seraph.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 110px 32px;
+}
+
+.slide-3 {
+    background: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../assets/home/mobile/image-hero-federal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 110px 32px;
+}
+
+.slide-4 {
+    background: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../assets/home/mobile/image-hero-trinity.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 110px 32px;
+}
+
+.slide-control {
+    display: none;
+}

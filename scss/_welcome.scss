@@ -1,0 +1,31 @@
+// HOME PAGE - WELCOME SECTION
+
+.welcome {
+    margin-top: 70px;
+    padding: 68px 32px 68px 32px;
+    position: relative;
+
+    & h2 {
+        margin-bottom: 30px;
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+    & p {
+        margin-bottom: 25px;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 65px;
+        background-color: $lightGrey;
+        top: 0;
+        left: 32px;
+    }
+}
+
+h1.large {
+    display: none;
+}

@@ -1,0 +1,42 @@
+// FEATURED SECTION
+
+.featured {
+
+    padding: 32px;
+
+    & h2 {
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+    & a {
+        width: 100%;
+    }
+
+    & p {
+        display: none;
+    }
+}
+
+.featured-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 25px 0;
+    height: 240px;
+    padding: 32px;
+
+    & h3,
+    & a {
+        color: white;
+    }
+
+    & a {
+        font-weight: 500;
+        text-decoration: none;
+    }
+}
+
+.featured-item-1 {
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5)), url(../assets/portfolio/mobile/image-del-sol-1.jpg);
+}
