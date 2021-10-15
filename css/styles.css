@@ -146,6 +146,7 @@ h1.large {
 }
 
 .slide {
+  display: none;
   position: relative;
   flex: 0 0 100%;
 }
@@ -162,6 +163,10 @@ h1.large {
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.current-slide {
+  display: block;
 }
 
 .slide-content {
