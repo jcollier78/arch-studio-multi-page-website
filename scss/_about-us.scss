@@ -1,6 +1,8 @@
 .about-us {
     background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/home/mobile/image-small-team.jpg);
-    margin-bottom: 72px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 36px;
     padding: 170px 32px;
 
     & h2 {

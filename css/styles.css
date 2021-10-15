@@ -69,8 +69,9 @@ h1.large {
 .btn {
   display: inline-block;
   background-color: #1B1D23;
-  padding: 24px 74px 24px 32px;
+  padding: 24px 78px 24px 32px;
   color: white;
+  text-align: center;
   text-decoration: none;
   text-transform: capitalize;
   position: relative;
@@ -79,8 +80,8 @@ h1.large {
 .btn::after {
   content: url(../assets/icons/icon-arrow-white.svg);
   position: absolute;
-  top: 28px;
-  right: 30px;
+  top: 27px;
+  margin-left: 20px;
 }
 
 .page-label {
@@ -108,7 +109,8 @@ h1.large {
   width: 90%;
   background-color: #EEEFF4;
   right: 0;
-  padding: 45px;
+  padding: 30px;
+  z-index: 10;
 }
 
 .mobile-menu ul {
@@ -117,12 +119,17 @@ h1.large {
 
 .mobile-menu a {
   display: block;
+  padding: 15px;
   color: #1B1D23;
+  font-size: 18px;
+  font-weight: 700;
   text-decoration: none;
 }
 
 .slide-container {
   position: relative;
+  display: flex;
+  flex-basis: row;
 }
 
 .slide-container p {
@@ -139,36 +146,28 @@ h1.large {
 }
 
 .slide {
-  display: none;
+  position: relative;
+  flex: 0 0 100%;
 }
 
-.slide-1 {
+.slide img {
   display: block;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/home/mobile/image-hero-paramour.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 110px 32px;
+  width: 100%;
 }
 
-.slide-2 {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/home/mobile/image-hero-seraph.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 110px 32px;
+.slide::before {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.slide-3 {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/home/mobile/image-hero-federal.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+.slide-content {
+  position: absolute;
   padding: 110px 32px;
-}
-
-.slide-4 {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/home/mobile/image-hero-trinity.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 110px 32px;
+  top: 0;
 }
 
 .slide-control {
@@ -207,7 +206,9 @@ h1.large {
 
 .about-us {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/home/mobile/image-small-team.jpg);
-  margin-bottom: 72px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 36px;
   padding: 170px 32px;
 }
 
@@ -225,6 +226,7 @@ h1.large {
 .featured h2 {
   font-size: 40px;
   line-height: 46px;
+  margin-bottom: 25px;
 }
 
 .featured a {
@@ -235,11 +237,20 @@ h1.large {
   display: none;
 }
 
+.featured-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-items a {
+  order: 4;
+}
+
 .featured-item {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin: 25px 0;
+  margin-bottom: 25px;
   height: 240px;
   padding: 32px;
 }
@@ -256,5 +267,23 @@ h1.large {
 
 .featured-item-1 {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../assets/portfolio/mobile/image-del-sol-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.featured-item-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../assets/portfolio/mobile/image-228b.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.featured-item-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../assets/portfolio/mobile/image-prototype.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-logo {
+  background: black;
 }
 /*# sourceMappingURL=styles.css.map */

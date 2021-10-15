@@ -3,8 +3,9 @@
 .btn {
     display: inline-block;
     background-color: $veryDarkBlue;
-    padding: 24px 74px 24px 32px;
+    padding: 24px 78px 24px 32px; //58 + 15
     color: white;
+    text-align: center;
     text-decoration: none;
     text-transform: capitalize;
     position: relative;
@@ -12,7 +13,7 @@
     &::after {
         content: url(../assets/icons/icon-arrow-white.svg);
         position: absolute;
-        top:28px;
-        right: 30px;
+        top: 27px;
+        margin-left: 20px;
     }
 }

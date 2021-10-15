@@ -7,6 +7,7 @@
     & h2 {
         font-size: 40px;
         line-height: 46px;
+        margin-bottom: 25px;
     }
 
     & a {
@@ -18,13 +19,22 @@
     }
 }
 
+.featured-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-items a {
+    order: 4
+}
+
 .featured-item {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin: 25px 0;
+    margin-bottom: 25px; 
     height: 240px;
-    padding: 32px;
+    padding: 32px;    
 
     & h3,
     & a {
@@ -39,4 +49,18 @@
 
 .featured-item-1 {
     background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5)), url(../assets/portfolio/mobile/image-del-sol-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.featured-item-2 {
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5)), url(../assets/portfolio/mobile/image-228b.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.featured-item-3 {
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5)), url(../assets/portfolio/mobile/image-prototype.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }

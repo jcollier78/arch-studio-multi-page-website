@@ -2,7 +2,9 @@
 
 .slide-container {
     position: relative;
-
+    display: flex;
+    flex-basis: row;
+    
     & p {
         padding-bottom: 55px; 
         color: white;
@@ -19,38 +21,31 @@
 }
 
 .slide {
-    display: none;
-}
+    position: relative;
+    flex: 0 0 100%;
+    
 
+    & img {
+        display: block;
+        width: 100%;
+    }
 
-.slide-1 {
-    display: block;
-    background: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../assets/home/mobile/image-hero-paramour.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    &::before {
+        content: '';
+        background-color: rgba(black, 0.3);
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}  
+
+.slide-content {
+    position: absolute;
     padding: 110px 32px;
+    top: 0;
 }
 
-.slide-2 {
-    background: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../assets/home/mobile/image-hero-seraph.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 110px 32px;
-}
-
-.slide-3 {
-    background: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../assets/home/mobile/image-hero-federal.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 110px 32px;
-}
-
-.slide-4 {
-    background: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../assets/home/mobile/image-hero-trinity.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 110px 32px;
-}
 
 .slide-control {
     display: none;
