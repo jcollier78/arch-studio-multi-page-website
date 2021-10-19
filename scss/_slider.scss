@@ -1,9 +1,11 @@
 // SLIDER
 
 .slide-container {
-    position: relative;
+    // position: relative;
     display: flex;
     flex-basis: row;
+    overflow: hidden;
+    z-index: 0;
     
     & p {
         padding-bottom: 55px; 
@@ -23,6 +25,7 @@
 .slide {
     position: relative;
     flex: 0 0 100%;
+    z-index: 1;
     
 
     & img {
