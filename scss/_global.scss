@@ -52,6 +52,10 @@ h1.large {
     color: $veryLightGrey;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     padding: 32px;
 }
@@ -59,12 +63,28 @@ h1.large {
 .flex {
     display: flex;
 
-    &-j-sb {
+    &-col {
+        flex-direction: column;
+    }
+
+    // justify content space between
+    &-jc-sb {
         justify-content: space-between;
     }
 
+    // justify content center
+    &-jc-c {
+        justify-content: center;
+    }
+  
+    // align item center
     &-ai-c {
         align-items: center;
+    }
+
+    // align self center
+    &-as-c {
+        align-self: center;
     }
 }
 

@@ -1,3 +1,37 @@
+footer {
+    text-align: center;
+}
+
+.footer-container {
+    background-color: $veryLightGrey;
+    padding: 70px 0 45px;
+}
+
 .footer-logo {
     background: black;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    position: relative;
+    top: 50px;
+}
+
+.footer-logo img {
+    display: block;
+    height: 24px;
+    width: auto;
+} 
+
+.footer-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.footer-menu a {
+    display: block;
+    padding: 16px;
+    font-weight: 700;
+    color: $mediumGrey;
 }
