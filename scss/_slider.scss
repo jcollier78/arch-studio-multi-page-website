@@ -23,6 +23,7 @@
 }
 
 .slide {
+    display: none;
     position: relative;
     flex: 0 0 100%;
     z-index: 1;
@@ -42,6 +43,10 @@
         height: 100%;
     }
 }  
+
+.current-slide {
+    display: block;
+}
 
 .slide-content {
     position: absolute;
