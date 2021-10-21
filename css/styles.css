@@ -448,18 +448,22 @@ header {
   padding: 32px;
 }
 
+@media screen and (min-width: 768px) {
+  .featured {
+    padding: 32px 97px;
+  }
+}
+
 .featured h2 {
   font-size: 40px;
   line-height: 46px;
+}
+
+.featured-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 25px;
-}
-
-.featured a {
-  width: 100%;
-}
-
-.featured p {
-  display: none;
 }
 
 .featured-items {
@@ -467,8 +471,20 @@ header {
   flex-direction: column;
 }
 
-.featured-items a {
-  order: 4;
+.feature-mobile {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .feature-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .feature-tablet {
+    display: none;
+  }
 }
 
 .featured-item {
@@ -478,6 +494,22 @@ header {
   margin-bottom: 25px;
   height: 240px;
   padding: 32px;
+  position: relative;
+}
+
+.featured-item h1.large {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .featured-item h1.large {
+    display: block;
+    opacity: 50%;
+    font-size: 200px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
 }
 
 .featured-item h3,
@@ -496,16 +528,34 @@ header {
   background-size: cover;
 }
 
+@media screen and (min-width: 768px) {
+  .featured-item-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../assets/portfolio/tablet/image-del-sol.jpg);
+  }
+}
+
 .featured-item-2 {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../assets/portfolio/mobile/image-228b.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+@media screen and (min-width: 768px) {
+  .featured-item-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../assets/portfolio/tablet/image-228b.jpg);
+  }
+}
+
 .featured-item-3 {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../assets/portfolio/mobile/image-prototype.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .featured-item-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../assets/portfolio/tablet/image-prototype.jpg);
+  }
 }
 
 footer {
