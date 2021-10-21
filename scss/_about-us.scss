@@ -7,6 +7,8 @@
 
     @media screen and (min-width: 768px) {
         background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/home/tablet/image-small-team.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
         margin: 0 97px;
         padding: 170px 55px;
     }
