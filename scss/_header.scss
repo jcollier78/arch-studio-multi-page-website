@@ -1,22 +1,91 @@
 // HEADER
+header {
+    position: relative;
+}
 
 .page-label {
     display: none;
+    position: fixed;
+    left: 48px;
+    transform-origin: top left;
+    transform: rotate(90deg);
+    text-transform: uppercase;
+    color: $lightGrey;
+    letter-spacing: 10px;
+
+    & span {
+        position: absolute;
+        top: -10px;
+        left: 102px;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 80px;
+        background-color: $lightGrey;
+        
+    }
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
 }
 
 .logo img {
     display: block;
-    width: 77px;
-    height: auto;
+    height: 32px;
+
+    @media screen and (min-width: 768px) {
+        height: 40px;
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
 }
 
 .main-menu {
     display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        margin-left: auto;
+    }
+
+    & ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        display: flex;
+    }
+
+    & li {
+        margin-right: 4rem;
+    }
+
+    & a {
+        display: block;
+        color: $mediumGrey;
+    }
 }
 
 .mobile-menu-toggle {
     display: flex;
     align-items: center;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 
 .mobile-background {
@@ -30,7 +99,6 @@
 }
 
 .mobile-menu {
-    // display: none;
     position: absolute;
     width: 90%;
     background-color: $veryLightGrey;

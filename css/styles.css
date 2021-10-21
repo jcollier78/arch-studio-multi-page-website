@@ -50,12 +50,26 @@ h1.large {
   color: #EEEFF4;
 }
 
+@media screen and (min-width: 768px) {
+  h1.large {
+    font-size: 120px;
+    letter-spacing: -3px;
+    text-align: center;
+  }
+}
+
 a {
   text-decoration: none;
 }
 
 .container {
   padding: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 32px 97px;
+  }
 }
 
 .flex {
@@ -108,23 +122,101 @@ a {
   margin: auto;
 }
 
+header {
+  position: relative;
+}
+
 .page-label {
   display: none;
+  position: fixed;
+  left: 48px;
+  transform-origin: top left;
+  transform: rotate(90deg);
+  text-transform: uppercase;
+  color: #C8CCD8;
+  letter-spacing: 10px;
+}
+
+.page-label span {
+  position: absolute;
+  top: -10px;
+  left: 102px;
+}
+
+.page-label::before {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 80px;
+  background-color: #C8CCD8;
+}
+
+@media screen and (min-width: 768px) {
+  .page-label {
+    display: block;
+  }
 }
 
 .logo img {
   display: block;
-  width: 77px;
-  height: auto;
+  height: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo img {
+    height: 40px;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 }
 
 .main-menu {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .main-menu {
+    display: flex;
+    margin-left: auto;
+  }
+}
+
+.main-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.main-menu li {
+  margin-right: 4rem;
+}
+
+.main-menu a {
+  display: block;
+  color: #7D828F;
+}
+
 .mobile-menu-toggle {
   display: flex;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-toggle {
+    display: none;
+  }
 }
 
 .mobile-background {
@@ -172,6 +264,12 @@ a {
   transition: opacity 500ms;
 }
 
+@media screen and (min-width: 768px) {
+  .slider {
+    margin: 0 97px;
+  }
+}
+
 .slide-container {
   display: flex;
   flex-basis: row;
@@ -192,16 +290,36 @@ a {
   color: white;
 }
 
+@media screen and (min-width: 768px) {
+  .slide-container h1 {
+    font-size: 80px;
+    line-height: 80px;
+  }
+}
+
 .slide {
   display: none;
   position: relative;
   flex: 0 0 100%;
   z-index: 1;
+  height: 560px;
+}
+
+@media screen and (min-width: 768px) {
+  .slide {
+    height: 720px;
+  }
 }
 
 .slide img {
   display: block;
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .slide img {
+    content: url(../assets/home/tablet/image-hero-paramour.jpg);
+  }
 }
 
 .slide::before {
@@ -211,6 +329,18 @@ a {
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.slide-1 {
+  background-image: url(../assets/home/mobile/image-hero-paramour.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .slide-1 {
+    background-image: url(../assets/home/tablet/image-hero-paramour.jpg);
+  }
 }
 
 .current-slide {
@@ -233,10 +363,24 @@ a {
   position: relative;
 }
 
+@media screen and (min-width: 768px) {
+  .welcome {
+    padding: 0 97px;
+  }
+}
+
 .welcome h2 {
   margin-bottom: 30px;
   font-size: 40px;
   line-height: 46px;
+}
+
+@media screen and (min-width: 768px) {
+  .welcome h2 {
+    width: 60%;
+    font-size: 56px;
+    line-height: 56px;
+  }
 }
 
 .welcome p {
@@ -253,8 +397,21 @@ a {
   left: 32px;
 }
 
-h1.large {
+@media screen and (min-width: 768px) {
+  .welcome::before {
+    display: none;
+  }
+}
+
+.welcome h1.large {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .welcome h1.large {
+    display: block;
+    line-height: 175px;
+  }
 }
 
 .about-us {
@@ -265,11 +422,26 @@ h1.large {
   padding: 170px 32px;
 }
 
+@media screen and (min-width: 768px) {
+  .about-us {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/home/tablet/image-small-team.jpg);
+    margin: 0 97px;
+    padding: 170px 55px;
+  }
+}
+
 .about-us h2 {
   margin-bottom: 32px;
   font-size: 40px;
   line-height: 46px;
   color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .about-us h2 {
+    font-size: 56px;
+    line-height: 56px;
+  }
 }
 
 .featured {

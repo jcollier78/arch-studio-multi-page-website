@@ -50,6 +50,14 @@ h1.large {
     line-height: 200px;
     letter-spacing: -5px;
     color: $veryLightGrey;
+
+    @media screen and (min-width: 768px) {
+        font-size: 120px;
+        letter-spacing: -3px;
+        text-align: center;
+    }
+
+
 }
 
 a {
@@ -58,6 +66,10 @@ a {
 
 .container {
     padding: 32px;
+    
+    @media screen and (min-width: 768px) {
+        padding: 32px 97px;
+    }
 }
 
 .flex {

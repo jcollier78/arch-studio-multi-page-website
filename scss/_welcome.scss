@@ -5,10 +5,20 @@
     padding: 68px 32px 68px 32px;
     position: relative;
 
+    @media screen and (min-width: 768px) {
+        padding: 0 97px;
+    }
+
     & h2 {
         margin-bottom: 30px;
         font-size: 40px;
         line-height: 46px;
+
+        @media screen and (min-width: 768px) {
+            width: 60%;
+            font-size: 56px;
+            line-height: 56px;
+        }
     }
 
     & p {
@@ -23,9 +33,19 @@
         background-color: $lightGrey;
         top: 0;
         left: 32px;
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+
+    & h1.large {
+        display: none;
+    
+        @media screen and (min-width: 768px) {
+            display: block;
+            line-height: 175px;
+        }
     }
 }
 
-h1.large {
-    display: none;
-}
