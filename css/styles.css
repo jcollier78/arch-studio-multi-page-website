@@ -567,12 +567,14 @@ header {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
-.footer-container {
+.footer-menu {
   background-color: #EEEFF4;
-  padding: 70px 0 45px;
+  padding: 70px 0 0;
 }
 
 .footer-logo {
@@ -601,5 +603,10 @@ footer {
   padding: 16px;
   font-weight: 700;
   color: #7D828F;
+}
+
+.footer-btn {
+  background-color: #EEEFF4;
+  padding: 10px 32px 45px;
 }
 /*# sourceMappingURL=styles.css.map */
