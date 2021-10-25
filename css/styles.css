@@ -567,14 +567,9 @@ header {
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
+  display: block;
   text-align: center;
-}
-
-.footer-menu {
-  background-color: #EEEFF4;
-  padding: 70px 0 0;
+  position: relative;
 }
 
 .footer-logo {
@@ -586,16 +581,52 @@ footer {
   top: 50px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-logo {
+    position: absolute;
+    top: 0;
+    margin: 0;
+  }
+}
+
 .footer-logo img {
   display: block;
   height: 24px;
   width: auto;
 }
 
+.footer-menu {
+  background-color: #EEEFF4;
+  padding: 70px 0 0;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-menu {
+    padding: 0;
+    width: 80%;
+  }
+}
+
 .footer-menu ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-menu ul {
+    display: flex;
+    align-items: center;
+    height: 120px;
+    margin-left: 120px;
+    padding: 0 80px 0 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-menu ul li {
+    margin-right: 15px;
+  }
 }
 
 .footer-menu a {
@@ -608,5 +639,16 @@ footer {
 .footer-btn {
   background-color: #EEEFF4;
   padding: 10px 32px 45px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-btn {
+    background-color: transparent;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
